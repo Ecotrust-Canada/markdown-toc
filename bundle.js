@@ -22,7 +22,7 @@ window.convert = function(e){
 
   document.getElementById('toc').value
   =toc(document.getElementById('md').value).content 
-  +"\n\n<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>\n";
+  +"\n\n<sub><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></sub>\n";
 
 };
 

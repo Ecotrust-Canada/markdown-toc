@@ -208,10 +208,11 @@ function slugify(str, opts) {
     return opts.slugify(str, opts);
   }
 
+  str = str.replace(/[±§!@£#$%^&*()+=\[\]\{\}:;\'\"|\\?\/~`<,>.]/g, '');
   str = str.split('.').join('').toLowerCase();
   str = str.split(' ').join('-');
   str = str.split(/\t/).join('----');
-  return str.replace(/[^a-z0-9]/g, '-');
+  return str.replace(/[^a-z0-9_]/g, '-');
 }
 
 /**
